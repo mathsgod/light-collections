@@ -1,5 +1,5 @@
 {
-    "name": "mathsgod/php-collections",
+    "name": "mathsgod/light-collections",
     "description": "Standalone .NET-style generic collections for PHP",
     "type": "library",
     "license": "MIT",

@@ -9,7 +9,7 @@ composer install
 composer test
 ```
 
-Composer package: `mathsgod/php-collections`. Namespace: `Light\Collections\Generic`, mapped to `src/Generic/` through PSR-4. Generic types are documented using PHPDoc; they are not runtime-enforced PHP generics.
+Composer package: `mathsgod/light-collections`. Namespace: `Light\Collections\Generic`, mapped to `src/Generic/` through PSR-4. Generic types are documented using PHPDoc; they are not runtime-enforced PHP generics.
 
 ## Collections
 
