@@ -11,6 +11,13 @@ composer test
 
 Composer package: `mathsgod/light-collections`. Namespace: `Light\Collections\Generic`, mapped to `src/Generic/` through PSR-4. Generic types are documented using PHPDoc; they are not runtime-enforced PHP generics.
 
+## Continuous integration
+
+GitHub Actions runs Composer validation and the PHPUnit suite on PHP 8.3, 8.4,
+and 8.5 for pushes and pull requests. The workflow can also be started manually
+from the Actions tab. Warnings, risky tests, deprecations, and notices fail the
+unit-test step. See [.github/workflows/tests.yml](.github/workflows/tests.yml).
+
 ## Collections
 
 ```php
