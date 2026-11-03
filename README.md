@@ -110,11 +110,5 @@ See the [collection usage guide](docs/collections.md) for more examples.
 
 ## LINQ integration
 
-Applications that also install `mathsgod/php-linq` can pass these collections to `Light\Linq\Enumerable::from($collection)` for filtering, projection, grouping, and aggregation.
+Applications that also install `mathsgod/light-linq` can pass these collections to `Light\Linq\Enumerable::from($collection)` for filtering, projection, grouping, and aggregation.
 The dependency direction is **light-linq → light-collections**; this package does not import or require light-linq. LINQ integration tests stay in light-linq, while standalone collection tests live here.
-
-## Migration from light-linq
-
-Collection classes and interfaces were moved out of light-linq. Replace imports beginning with `Light\Linq\Collections\Generic` with `Light\Collections\Generic`. Class names and behavior remain the same.
-
-The sibling repositories use Composer path repositories for local development. If your application uses a path repository for light-linq, it must also declare a path repository for light-collections: Composer does not inherit repository declarations from dependencies. When consuming this standalone package, use the dependency source appropriate to your deployment; creating this directory does not publish it to a package registry.
