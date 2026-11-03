@@ -114,8 +114,3 @@ The base collection interface extends PHP's `IteratorAggregate` and `Countable`.
 Default equality distinguishes PHP types, compares arrays strictly, and uses object identity. Positive and negative floating-point zero share a hash; NaN values compare equal. Array hashes include ordered keys and values, use identity for nested objects, and do not invoke object serialization, so arrays containing closures are supported. Hash traversal is bounded for deep or recursive arrays, with collisions resolved by equality; this does not add cycle-aware array equality. Dictionary and HashSet accept custom `EqualityComparer` implementations. Equal values must have the same hash; hash collisions are checked with `equals()`.
 
 See the [collection usage guide](docs/collections.md) for more examples.
-
-## LINQ integration
-
-Applications that also install `mathsgod/light-linq` can pass these collections to `Light\Linq\Enumerable::from($collection)` for filtering, projection, grouping, and aggregation.
-The dependency direction is **light-linq → light-collections**; this package does not import or require light-linq. LINQ integration tests stay in light-linq, while standalone collection tests live here.
